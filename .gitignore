@@ -1,0 +1,8 @@
+sample/*
+!sample/PUT_FILES_HERE.txt
+result/*
+!result/figures/
+result/figures/*
+!result/figures/.gitkeep
+.ipynb_checkpoints/
+__pycache__/

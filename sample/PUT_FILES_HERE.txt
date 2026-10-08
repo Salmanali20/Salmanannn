@@ -1,0 +1,6 @@
+Letakkan file hasil MitoNGS di folder ini (nama file bebas):
+
+  Cara A (satu file): ASVTable (5).tsv.gz   <- .gz tidak perlu diekstrak
+  Cara B (dua file) : asv_table.tsv + taxresults.csv
+
+Setelah itu jalankan visualizer.ipynb dari folder induk (ASV-Visualizer/).

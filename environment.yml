@@ -1,0 +1,21 @@
+name: ASV-Visualizer
+channels:
+  - conda-forge
+  - bioconda
+  - nodefaults
+dependencies:
+  - python=3.11
+  - pandas=2.2
+  - numpy<2.3
+  - matplotlib=3.9
+  - plotly=5.24
+  - jupyterlab
+  - ipykernel
+  - nbformat>=5.7
+  # KronaTools (menyediakan ktImportText). Hanya tersedia di Linux & macOS (bioconda).
+  # PENGGUNA WINDOWS: hapus / beri tanda # pada baris di bawah ini sebelum `conda env create`.
+  # Notebook akan otomatis memakai sunburst Plotly sebagai pengganti Krona.
+  - bioconda::krona
+  - pip
+  - pip:
+      - kaleido==0.2.1   # ekspor PNG dari plot Plotly (Sankey)
